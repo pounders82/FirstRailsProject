@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+This is the repository for the first project of the Complete Ruby on Rails Developer Course
