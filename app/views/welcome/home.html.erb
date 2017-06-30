@@ -1,0 +1,146 @@
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Home</title>
+  <!-- StyleSheet-->
+  <style>
+    body {
+      font-family: Arial, Helmet, Freesans, sans-serif;
+      margin: 0;
+      line-height: 16px;
+    }
+
+    #top-bar {
+      width: 100%;
+      background-color: #fcbb31;
+      border-bottom: solid;
+      border-top: solid;
+    }
+
+    #KSU-logo {
+      /*width: 25%;*/
+
+      padding-left: 10px;
+      padding-bottom: 0;
+      align: left;
+      /*height: 46px;*/
+    }
+
+    .topbartext {
+      text-align: right;
+      float: right;
+      font-weight: bold;
+      font-size: 36px;
+      padding-right: 10px;
+      vertical-align: middle;
+    }
+
+    #toolbar {
+      width: 100%;
+      height: 15%;
+      padding: 10px 10px 10px 10px;
+      border-bottom: solid;
+    }
+
+
+    #floatright ul {
+      padding: 0px 5px 0px 5px;
+      position: relative;
+    }
+
+    #floatright li {
+      float: right;
+      padding: 0px 20px 0px 10px;
+      list-style: none;
+      position: relative;
+    }
+
+    #welcome {
+      width: 100%;
+      height: 10%;
+    }
+
+    .welcometxt {
+      text-align: center;
+      font-weight: bold;
+      font-size: 56px;
+    }
+
+    .owlimage {
+      text-align: center;
+    }
+
+    #floatright {
+      float: right;
+    }
+
+  </style>
+</head>
+<body>
+<!-- KSU logo and toolbar -->
+<div id="top-bar">
+  <p class="topbartext"> University Bookstore</p>
+  <div id="KSU-logo">
+    <!--<img src="app/assets/images/BlackLogo.png")>-->
+    <%= image_tag("BlackLogo.png") %>
+  </div>
+</div>
+<!-- Help and Shopping Cart Links-->
+<div id="floatright">
+  <ul>
+    <li>
+      <a href="~/shoppingcart.html">
+        <%=image_tag("ShoppingCart.png")%> Shopping Cart</a>
+
+    </li>
+    <li>
+      <a href="~/help.html">Help</a>
+    </li>
+  </ul>
+</div>
+<!-- Search Toolbar-->
+<div id="toolbar">
+
+  <form action="/Book/Book" method="get">
+    <!--Search Toolbar obtains text input from user-->
+    <input type="text" name ="search" id="search" size="40" placeholder="Course Number, ISBN, Title, Keywords" action="" required />
+    <input type="submit" onclick="location.href='../Book/Book'" value= "Search for Books" />
+
+    <%= link_to("About",about_path)%>
+  </form>
+
+
+
+</div>
+
+<div id="welcome">
+
+  <p class="welcometxt"> Welcome to the KSU Bookstore</p>
+
+</div>
+
+<div class="owlimage">
+  <%=image_tag("9c5b4d04279c6fbbe7c20c1c26384013.png") %>
+</div>
+
+<h1>This is the home page</h1>
+
+<p>
+
+</p>
+
+<footer>
+  Copyright 2017 Kennesaw State University
+</footer>
+
+</body>
+</html>
+
+<cs>
+
+</cs>
+
+
+
+
